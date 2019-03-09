@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>dashboard_hw</title>
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hurricanes!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
-<!-- As a link -->
-<nav class="navbar navbar-light bg-ligh">
-    <a class="navbar-brand" href="#">LATITUDE</a>
-    <button class="navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-    </button>   
-</nav>
+
 <body>
-    <div class="container">
-        <div class = row>
-            <div class = col-md-12>
-                <h1>DATA DASHBOARD</h1>
+    <div class="container-fluid">
+        <nav class="navbar navbar-brand">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-inverse" href="./landing.html"><span class="latitude">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
+                            <span class="caret"></span></button> 
+                            <ul class="dropdown-menu">
+                                <li><a href="./HTML HW/Airport_Heatmap.png">Latitude vs. Max Temperature</a></li>
+                                <li><a href="./HTML HW/Hybrid_Map.png">Latitude vs. Humidity</a></li>
+                                <li><a href="./HTML HW/Terrain_Map.png">Latitude vs. Cloudiness</a></li>
+                            </ul>
+                        </div>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box">
+                            <div class="page-header">
+                                <h1 class="title">Latitude: WheatherPy</h1>
+                            </div>
+                            <div class="box">
+                                <img src="./HTML HW/Airport_Heatmap.png" alt="Latitude vs. Max Temperature" height="280" width="280">
+                                <p class="category"> WeatherPy Homework: This is a collection of the data analysis made for and by the Weather API. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="box">
+                            <div class="page-header">
+                                <h1 class="title">Visualizations</h1>
+                            </div>
+                            <div class="box">
+                               <a href="./HTML HW/Airport_Heatmap.png"><img src="./HTML HW/Airport_Heatmap.png" alt="Airport_Heatmap" height="160" width="160"></a>
+                               <a href="./HTML HW/Hybrid_Map.png"><img src="./HTML HW/Hybrid_Map.png" alt="Hybrid_Map" height="160" width="160"></a>
+                               <a href="./HTML HW/Terrain_Map.png"><img src="./HTML HW/Terrain_Map.png" alt="Terrain_Map" height="160" width="160"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                  <p>A</p>
-            </div>
-            <div class="col-md-3">
-                  <p>A</p>
-            </div>
-            <div class="col-md-3">
-                  <p>L</p>
-            </div>
-        </div>
-          
     </div>
-<img src="" class="img-fluid" alt="Responsive image">
 </body>
 </html>
-
